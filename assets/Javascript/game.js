@@ -29,7 +29,7 @@ document.onkeyup = function (event) {
         document.getElementById("userWins").innerHTML = "Wins: " + wins;
         guesses = 9
         document.getElementById("guessesLeft").innerHTML = "Guesses left: " + guesses;
-        letters = letters + userGuess;
+        letters = [];
         document.getElementById("lettersGuessed").innerHTML = "Your Gueeses So Far: " + letters;
         computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     }
@@ -46,7 +46,10 @@ document.onkeyup = function (event) {
         document.getElementById("userLosses").innerHTML = "Losses: " + losses;
         guesses = 9
         document.getElementById("guessesLeft").innerHTML = "Guesses left: " + guesses;
+        letters = [];
+        document.getElementById("lettersGuessed").innerHTML = "Your Gueeses So Far: " + letters;
         computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+        
 
     }
 
